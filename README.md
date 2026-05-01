@@ -33,11 +33,11 @@ python3 exploit.py -t eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdCJ9.
 ```
 
 ## Options
-
+```bash
 -t, --token      JWT token  
 -w, --wordlist   Path to wordlist file  
 -v,              Version number  
-
+```
 ## Example Output
 
 ```bash
