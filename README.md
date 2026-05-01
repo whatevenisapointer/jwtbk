@@ -1,11 +1,12 @@
-# JWT Secret Brute Forcer		
--
+# JWT Secret Brute Forcer
+
+```
      ___        _______    ____ ____      _    ____ _  _______ ____  
     | \ \      / /_   _|  / ___|  _ \    / \  / ___| |/ / ____|  _ \ 
  _  | |\ \ /\ / /  | |   | |   | |_) |  / _ \| |   | ' /|  _| | |_) |
 | |_| | \ V  V /   | |   | |___|  _ <  / ___ \ |___| . \| |___|  _ < 
- \___/   \_/\_/    |_|    \____|_| \_\/_/   \_\____|_|\_\_____|_| \_\ 
-
+ \___/   \_/\_/    |_|    \____|_| \_\/_/   \_\____|_|\_\_____|_| \_\
+```
 
 A simple Python tool to brute-force HS256 JWT secrets using a wordlist.
 
@@ -18,20 +19,24 @@ cd jwt-cracker
 
 pip install -r requirements.txt
 ```
+
 ## Usage
 
 ```bash
 python3 exploit.py -t <token> -w <wordlist>
 ```
+
 ## Example
+
 ```bash
 python3 exploit.py -t eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdCJ9.4Dr0n9n3L9A22I3SmrnVXlrh-ahEmIBr4qFoiVOfq40 -w jwt.secrets.list
 ```
+
 ## Options
 
 -t, --token      JWT token  
 -w, --wordlist   Path to wordlist file  
--v,              Version number
+-v,              Version number  
 
 ## Example Output
 
@@ -40,6 +45,7 @@ python3 exploit.py -t eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdCJ9.
 [+] Valid key found: secret1
 [+] Time elapsed: 0.0109s
 ```
+
 ## Requirements
 
 - Python 3.x
