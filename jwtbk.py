@@ -39,7 +39,7 @@ def bruteforce(token,wordlist):
 
 def main():
 
-    parser = argparse.ArgumentParser(description ='Bruteforce JWT secret keys', usage='exploit.py -t <token> -w <wordlist>')
+    parser = argparse.ArgumentParser(description ='Bruteforce JWT secret keys', usage='jwtbk.py -t <token> -w <wordlist>')
     parser.add_argument("-t", required=True, help="Token", metavar="TOKEN")
     parser.add_argument("-w", required=True, help="wordlist", metavar="WORDLIST")
     parser.add_argument("-v", help="Version number", action="version", version=" Version 1.0")
