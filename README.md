@@ -14,7 +14,7 @@ A simple Python tool to brute-force HS256 JWT secrets using a wordlist.
 ## Installation
 
 ```bash
-git clone https://github.com/whatevenisapointer/jwt-cracker
+git clone https://github.com/whatevenisapointer/jwtbk
 cd jwt-cracker
 
 pip install -r requirements.txt
@@ -23,13 +23,13 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python3 exploit.py -t <token> -w <wordlist>
+python3 jwtbk.py -t <token> -w <wordlist>
 ```
 
 ## Example
 
 ```bash
-python3 exploit.py -t eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdCJ9.4Dr0n9n3L9A22I3SmrnVXlrh-ahEmIBr4qFoiVOfq40 -w jwt.secrets.list
+python3 jwtbk.py -t eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdCJ9.4Dr0n9n3L9A22I3SmrnVXlrh-ahEmIBr4qFoiVOfq40 -w jwt.secrets.list
 ```
 
 ## Options
